@@ -5,6 +5,9 @@ import '../presentation/home_dashboard/home_dashboard.dart';
 import '../presentation/property_search_and_filters/property_search_and_filters.dart';
 import '../presentation/booking_management/booking_management.dart';
 import '../presentation/property_detail_view/property_detail_view.dart';
+import '../presentation/vehicle_marketplace/vehicle_marketplace.dart';
+import '../presentation/vehicle_detail_view/vehicle_detail_view.dart';
+import '../presentation/messages_and_chat/messages_and_chat.dart';
 
 class AppRoutes {
   // TODO: Add your routes here
@@ -15,6 +18,9 @@ class AppRoutes {
   static const String propertySearchAndFilters = '/property-search-and-filters';
   static const String bookingManagement = '/booking-management';
   static const String propertyDetailView = '/property-detail-view';
+  static const String vehicleMarketplace = '/vehicle-marketplace';
+  static const String vehicleDetailView = '/vehicle-detail-view';
+  static const String messagesAndChat = '/messages-and-chat';
 
   static Map<String, WidgetBuilder> routes = {
     initial: (context) => const SplashScreen(),
@@ -24,6 +30,9 @@ class AppRoutes {
     propertySearchAndFilters: (context) => const PropertySearchAndFilters(),
     bookingManagement: (context) => const BookingManagement(),
     propertyDetailView: (context) => PropertyDetailView(),
+    vehicleMarketplace: (context) => const VehicleMarketplace(),
+    vehicleDetailView: (context) => const VehicleDetailView(),
+    messagesAndChat: (context) => const MessagesAndChat(),
     // TODO: Add your other routes here
   };
 }
